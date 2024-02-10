@@ -765,6 +765,7 @@ header.shadow {
 @media (min-width: 376px) and (max-width: 412px) {
   .products-container .box {
     right: 0.5rem;
+    margin-right: 1.5rem;
   }
 }
 
