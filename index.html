@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link rel="shortcut icon" href="img/logo.png" type="image/svg+xml">
+
+   <!--=============== REMIXICONS ===============-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+   <!--=============== BOXICONS ===============-->
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+   <!--=============== FontAwesome ===============-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="css/styles.css">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+   <!--=============== ScrollReveal JS ===============-->
+   <script src="js/scrollreveal.min.js"></script>
+
+   <title>Coffee Shop</title>
+</head>
+
+<body>
+   <main>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a href="index.html" class="nav__logo"><img src="img/logo.png" alt=""></a>
+
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                  <li class="nav__item"><a href="#about" class="nav__link">About Us</a></li>
+                  <li class="nav__item"><a href="#menu" class="nav__link">Menu</a></li>
+                  <li class="nav__item"><a href="#products" class="nav__link">Products</a></li>
+                  <li class="nav__item"><a href="#customers" class="nav__link">Customers</a></li>
+               </ul>
+
+               <!-- close button -->
+               <div class="nav__close" id="nav-close">
+                  <i class="ri-close-line"></i>
+               </div>
+            </div>
+
+            <div class="nav__actions">
+
+               <!-- Search -->
+               <i class="ri-search-line nav__search" id="search-btn"></i>
+
+               <!-- Cart -->
+               <a href="#"><i class="ri-shopping-cart-fill nav__cart" id="cart-btn"></i></a>
+
+               <!-- Login -->
+               <i class="ri-user-line nav__login" id="login-btn"></i>
+
+               <!-- Toggle -->
+               <div class="nav__toggle" id="nav-toggle">
+                  <i class="ri-menu-line"></i>
+               </div>
+            </div>
+         </nav>
+      </header>
+
+      <!--==================== SEARCH ====================-->
+      <div class="search" id="search">
+         <form action="" class="search__form">
+            <i class="ri-search-line search__icon"></i>
+            <input type="search" placeholder="What are you looking for?" class="search__input">
+         </form>
+
+         <i class="ri-close-line search__close" id="search-close"></i>
+      </div>
+
+      <!--==================== LOGIN ====================-->
+      <div class="login" id="login">
+         <form action="" class="login__form">
+            <h2 class="login__title">Log In</h2>
+
+            <div class="login__group">
+               <div>
+                  <label for="email" class="login__label">Email</label>
+                  <input type="email" class="login__input" id="email" placeholder="Email">
+               </div>
+               <div>
+                  <label for="password" class="login__label">Password</label>
+                  <input type="password" class="login__input" id="password" placeholder="Password">
+               </div>
+            </div>
+
+            <div>
+               <p class="login__signup">
+                  You do not have an account? <a href="#">Sign up</a>
+               </p>
+
+               <a href="#" class="login__forgot">Forogt password?</a>
+            </div>
+
+            <button type="submit" class="login__button">Log In</button>
+
+
+            <!-- <div class="cart-item-container">
+            <div class="cart-item">
+               <img src="img/p1.png" alt="image">
+               <span class="fas fa-times"></span>
+               <div class="content">
+                  <h3>Cart item 01</h3>
+                  <div class="price">$15.99</div>
+               </div>
+            </div>
+
+            <div class="cart-item">
+               <img src="img/p2.png" alt="image">
+               <span class="fas fa-times"></span>
+               <div class="content">
+                  <h3>Cart item 02</h3>
+                  <div class="price">$15.99</div>
+               </div>
+            </div>
+
+            <div class="cart-item">
+               <img src="img/p3.png" alt="image">
+               <span class="fas fa-times"></span>
+               <div class="content">
+                  <h3>Cart item 03</h3>
+                  <div class="price">$15.99</div>
+               </div>
+            </div>
+
+            <div class="cart-item">
+               <img src="img/p4.png" alt="image">
+               <span class="fas fa-times"></span>
+               <div class="content">
+                  <h3>Cart item 04</h3>
+                  <div class="price">$15.99</div>
+               </div>
+
+               <a href="#" class="btn">Checkout</a>
+
+            </div>
+         </div>  -->
+         </form>
+
+         <i class="ri-close-line login__close" id="login-close"></i>
+      </div>
+
+      <!--==================== HOME ====================-->
+
+      <section class="home" id="home">
+         <div class="home-text">
+            <h1>Start your day <br> with Coffee</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo consequuntur dolor saepe tempore</p>
+            <a href="#" class="btn">Shop Now</a>
+         </div>
+         <div class="home-img">
+            <img src="img/main.png" alt="image">
+         </div>
+      </section>
+
+      <!-- About -->
+      <section class="about" id="about">
+         <div class="about-img">
+            <img src="img/about.jpg" alt="about-image">
+         </div>
+         <div class="about-text">
+            <h2>Our History</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nihil, officiis quod ratione tempore
+               eveniet
+               beatae id obcaecati ipsa reprehenderit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nihil, officiis quod ratione tempore
+               eveniet
+               beatae id obcaecati ipsa reprehenderit.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates nulla dolore maiores quam sed.</p>
+            <a href="#" class="btn">Learn More</a>
+         </div>
+      </section>
+
+
+      <!-- Products -->
+      <section class="products" id="products">
+         <div class="heading">
+            <h2>Our popular products</h2>
+         </div>
+
+         <!-- Container -->
+         <div class="products-container">
+            <div class="box">
+               <img src="img/p1.png" alt="products">
+               <h3>Americano Pure</h3>
+               <div class="content">
+                  <span>₹500</span>
+                  <a href="#">Buy Now</a>
+               </div>
+            </div>
+            <div class="box">
+               <img src="img/p2.png" alt="products">
+               <h3>Americano Pure</h3>
+               <div class="content">
+                  <span>₹500</span>
+                  <a href="#">Buy Now</a>
+               </div>
+            </div>
+            <div class="box">
+               <img src="img/p3.png" alt="products">
+               <h3>Americano Pure</h3>
+               <div class="content">
+                  <span>₹500</span>
+                  <a href="#">Buy Now</a>
+               </div>
+            </div>
+            <div class="box">
+               <img src="img/p4.png" alt="products">
+               <h3>Americano Pure</h3>
+               <div class="content">
+                  <span>₹500</span>
+                  <a href="#">Buy Now</a>
+               </div>
+            </div>
+            <div class="box">
+               <img src="img/p5.png" alt="products">
+               <h3>Americano Pure</h3>
+               <div class="content">
+                  <span>₹500</span>
+                  <a href="#">Buy Now</a>
+               </div>
+            </div>
+            <div class="box">
+               <img src="img/p6.png" alt="products">
+               <h3>Americano Pure</h3>
+               <div class="content">
+                  <span>₹500</span>
+                  <a href="#">Buy Now</a>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- Customers -->
+      <section class="customers" id="customers">
+         <div class="heading">
+            <h2>Our customer's</h2>
+         </div>
+         <!-- Container -->
+         <div class="customers-container">
+            <div class="box">
+               <div class="stars">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star-half"></i>
+               </div>
+
+               <p>"Lorem ipsum dolor sit amet consectetur Tempore a exercitationem blanditiis, praesentium
+                  modi consequatur."</p>
+               <h2>Yasin Arafat</h2>
+               <img src="img/rev1.jpg" alt="">
+            </div>
+            <div class="box">
+               <div class="stars">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star-half"></i>
+               </div>
+
+               <p>"Lorem ipsum dolor sit amet consectetur
+                  modi consequatur."</p>
+               <h2>Yasin Arafat</h2>
+               <img src="img/rev2.jpg" alt="">
+            </div>
+            <div class="box">
+               <div class="stars">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star-half"></i>
+               </div>
+
+               <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nisi perferendis doloremque illum
+                  officia
+                  tenetur ut saepe error omnis aperiam. Minima eius eaque magni consectetur."</p>
+               <h2>Yasin Arafat</h2>
+               <img src="img/rev3.jpg" alt="">
+            </div>
+         </div>
+      </section>
+
+      <!-- footer -->
+      <footer>
+         <div class="row">
+            <div class="col">
+               <img src="img/logo.png" alt="logo">
+               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta vel, modi neque accusantium quis
+                  quia!
+               </p>
+               <div class="social">
+                  <a href=""><i class="fa-brands fa-facebook"></i></a>
+                  <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                  <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+               </div>
+            </div>
+            <div class="col">
+               <h3>Coffee Shop</h3>
+               <p><i class="fa-solid fa-location-dot"></i>250 New York City, USA 100001</p>
+               <p class="email-id"><i class="fa-solid fa-envelope"></i>devildragon@outlook.com</p>
+               <h4><i class="fa-solid fa-phone"></i>+91 6355 125235</h4>
+            </div>
+            <div class="col">
+               <h3>Links</h3>
+               <ul>
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#about">About Us</a></li>
+                  <li><a href="#menu">Menu</a></li>
+                  <li><a href="#products">Products</a></li>
+                  <li><a href="#customers">Customers</a></li>
+               </ul>
+            </div>
+            <div class="col">
+               <h3>Daily Updates</h3>
+               <form action="" class="foot-email">
+                  <i class="far fa-envelope"></i>
+                  <input type="email" placeholder="Enter your email id" required>
+                  <button type="submit"><i class="fas fa-arrow-right"></i></button>
+               </form>
+            </div>
+         </div>
+         <hr>
+
+      </footer>
+
+      <!--========== SCROLL UP ==========-->
+      <a href="#" class="scrollup" id="scroll-up">
+         <i class="ri-arrow-up-line"></i>
+      </a>
+
+   </main>
+
+   <!--=============== MAIN JS ===============-->
+   <script src="js/main.js"></script>
+</body>
+
+</html>
